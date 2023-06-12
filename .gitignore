@@ -5,13 +5,5 @@ yarn-error.log
 # IDE
 .vscode
 
-# Build
-/plugin
-/react
-/shared
-/*.js
-/*.map
-/*.d.ts
-
 # Other
 TODO.md
