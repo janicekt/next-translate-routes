@@ -117,7 +117,7 @@ export const getPageReRoutes = <L extends TAnyLocale>(routeSegments: TRouteSegme
   /** REDIRECTS */
   const redirects = locales.reduce((acc, locale) => {
     const localePath = getFullLocalePath(locale, routeSegments)
-    const destination = `${locale === defaultLocale ? '' : `/${locale}`}${sourceToDestination(localePath)}`
+    const destination = `${sourceToDestination(localePath)}`
 
     return [
       ...acc,
@@ -127,7 +127,7 @@ export const getPageReRoutes = <L extends TAnyLocale>(routeSegments: TRouteSegme
           return acc
         }
 
-        const source = `/${locale}${rawSource}`
+        const source = `/${rawSource}`
         const sourceSegments = source.split('/')
 
         // Look for similar redirects

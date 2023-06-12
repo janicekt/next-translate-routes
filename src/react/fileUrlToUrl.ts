@@ -135,7 +135,7 @@ export const fileUrlToUrl = (url: UrlObject | URL | string, locale: string, { th
       }
     }
 
-    return `${locale !== defaultLocale ? `/${locale}` : ''}${formatUrl({
+    return `${formatUrl({
       pathname: newPathname,
       query,
       hash,

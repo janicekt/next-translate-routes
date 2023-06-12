@@ -216,7 +216,7 @@ export const translateUrl: TTranslateUrl = ((url, locale, options) => {
     return translatedPath
   }
 
-  const prefix = locale === defaultLocale || options?.withoutLangPrefix ? '' : `/${locale}`
+  const prefix = ''
 
   return normalizePathTrailingSlash(prefix + translatedPath)
 }) as typeof translatePath
