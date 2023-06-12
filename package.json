@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build:clear": "rimraf plugin react shared ./*.d.ts ./*.js.map ./*.js",
-    "tsc": "tsc",
+    "tsc": "tsc -p ./tsconfig.json",
     "build": "npm run build:clear && npm run tsc",
     "format": "yarn prettier -c --write .",
     "lint": "yon eslint --ignore-path .gitignore .",
