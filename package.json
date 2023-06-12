@@ -37,7 +37,6 @@
   },
   "files": [
     "*.js",
-    "tsconfig.json",
     "*.d.ts",
     "*.js.map",
     "plugin/*",
