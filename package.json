@@ -18,7 +18,7 @@
     "dynamic"
   ],
   "scripts": {
-    "build:clear": "npm run rimraf plugin react shared ./*.d.ts ./*.js.map ./*.js",
+    "build:clear": "rimraf plugin react shared ./*.d.ts ./*.js.map ./*.js",
     "build": "npm run build:clear && npm run tsc",
     "format": "yarn prettier -c --write .",
     "lint": "yon eslint --ignore-path .gitignore .",
